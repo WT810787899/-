@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>512</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>512</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>HarmonyOS Sans SC Light</family>
+    <pointsize>14</pointsize>
+    <underline>false</underline>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>true</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>音乐基值计算器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ico256.ico</normaloff>ico256.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string>1111111111</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>5</number>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="main">
+   <property name="font">
+    <font>
+     <family>HarmonyOS Sans</family>
+     <pointsize>16</pointsize>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">alternate-background-color: rgb(226, 226, 226);</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_qingkong">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>62</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>14</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton {  
+            border: 1px solid rgba(100, 100, 100,255); /* QPushButton边框的宽度、样式和颜色 */
+            background-color: rgba(255, 130, 120,255);
+            color:rgb(0, 0, 0);
+             /* border: none; /* 无边框 */  
+            border-radius: 5px; /* 边框圆角 */  
+			/*font-size: 18pt; /* 字体大小 */
+        }
+
+QPushButton:hover {  
+            /* 鼠标悬停效果 */  
+            background-color: rgba(56, 170, 107,185); /* 更深的背景 */  
+        }  
+
+QPushButton:pressed { /* 鼠标按压在QPushButton上时的状态 */
+    background-color: rgba(56, 170, 107,255);
+}</string>
+    </property>
+    <property name="locale">
+     <locale language="Chinese" country="China"/>
+    </property>
+    <property name="text">
+     <string>🗑️清空</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="horizontalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>62</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>20</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置水平滚动条的样式 */
+
+/* 整体样式 */
+QScrollBar:horizontal{
+	
+    margin:0px 00px 0px 00px; /* 外边距 */
+    background-color:rgb(85, 170, 127); /* 背景颜色 */
+	border-radius:6px;  /*边角圆润*/
+    border:none; /* 边框 */
+    height:20px; /* 高度 */
+    padding-left:20px;  /*左预留位置*/
+    padding-right:20px;  /*右预留位置*/
+}
+/* 滑块样式 */
+QScrollBar::handle:horizontal{
+
+    background-color:rgb(68, 68, 68); /* 背景颜色 */
+    border-radius:7px; /*边角圆润*/
+    height:20px; /* 高度 */
+}
+
+/* 滑块悬停样式 */
+QScrollBar::handle:horizontal:hover{
+    background: rgb(75, 75, 75); /* 背景颜色 */
+}
+
+/*滑块按下样式*/
+QScrollBar::handle:horizontal:pressed{
+    background-color: rgb(44, 44, 44);
+}
+
+/* 向右按钮样式 */
+QScrollBar::add-line:horizontal{
+    subcontrol-position: right; /* 子控件位置 */
+    subcontrol-origin:margin; /* 子控件原点 */
+    background-color:rgb(104, 175, 148);
+    border:0px solid rgb(255, 170, 0); /* 边框 */
+    height:41px; /* 高度 */
+    width:25px; /* 宽度 */
+	border-radius:6px;  /*边角圆润*/
+}
+QScrollBar::add-line:horizontal:hover{
+	 background-color:rgb(99, 190, 142)
+}
+
+QScrollBar::add-line:horizontal:pressed{
+    background-color:rgb(87, 147, 127);
+}
+
+/* 向左按钮样式 */
+QScrollBar::sub-line:horizontal{
+	
+    subcontrol-position: left; /* 子控件位置 */
+    subcontrol-origin:margin; /* 子控件原点 */
+    background-color:rgb(104, 175, 148);
+    border:0px solid rgb(103, 170, 151); /* 边框 */
+    height:41px; /* 高度 */
+    width:25px; /* 宽度 */
+	border-radius:6px;  /*边角圆润*/
+}
+QScrollBar::sub-line:horizontal:hover{
+	 background-color:rgb(99, 190, 142)
+}
+
+QScrollBar::sub-line:horizontal:pressed{
+    background-color:rgb(87, 147, 127);
+}
+/* 向左箭头样式 */
+QScrollBar::left-arrow:horizontal{
+   /* border-image:url(:/commonImg/Resources/image/common/arrowLeft.png); /* 图片路径 */
+    width:30px; /* 宽度 */
+    height:1px; /* 高度 */
+}
+
+/* 向右箭头样式 */
+QScrollBar::right-arrow:horizontal{
+    /*border-image:url(:/commonImg/Resources/image/common/arrowRight.png); /* 图片路径 */
+    width:6px; /* 宽度 */
+    height:60px; /* 高度 */
+}
+
+/* 滚动区域样式 */
+QScrollBar::sub-page:horizontal,
+QScrollBar::add-page:horizontal{
+    background-color:rgb(213, 226, 219)
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>20</number>
+    </property>
+    <property name="maximum">
+     <number>300</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="pageStep">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>150</number>
+    </property>
+    <property name="sliderPosition">
+     <number>150</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>12</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>16</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;请输入一个BGM速度&lt;/span&gt;⬇⬇⬇&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse</set>
+    </property>
+    <property name="1" stdset="0">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>132</y>
+      <width>201</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC Medium</family>
+      <pointsize>18</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="accessibleName">
+     <string>23233</string>
+    </property>
+    <property name="accessibleDescription">
+     <string>12222</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color:rgb(255, 255, 255);
+selection-background-color:rgb(124, 136, 144);
+background-color: qlineargradient(spread:pad, x1:0.483, y1:0, x2:0.489, y2:1, stop:0 rgba(239, 255, 239, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>12</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="background">
+     <brush brushstyle="SolidPattern">
+      <color alpha="240">
+       <red>50</red>
+       <green>50</green>
+       <blue>50</blue>
+      </color>
+     </brush>
+    </property>
+    <property name="activationOrder">
+     <enum>QMdiArea::CreationOrder</enum>
+    </property>
+    <property name="viewMode">
+     <enum>QMdiArea::SubWindowView</enum>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="speed_entry">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>62</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OPPOSans M</family>
+      <pointsize>18</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(255, 255, 180);
+selection-background-color: rgb(63, 72, 85);
+</string>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string notr="true">点击输入</string>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::VisualMoveStyle</enum>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>132</y>
+      <width>201</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC Medium</family>
+      <pointsize>18</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="accessibleName">
+     <string>23233</string>
+    </property>
+    <property name="accessibleDescription">
+     <string>12222</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color:rgb(255, 255, 255);
+selection-background-color:rgb(124, 136, 144);
+background-color: qlineargradient(spread:pad, x1:0.483, y1:0, x2:0.489, y2:1, stop:0 rgba(239, 255, 239, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ZP">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>670</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC Medium</family>
+      <pointsize>18</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(69, 157, 132, 200);
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>       🎼正拍</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_FP">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>670</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC Medium</family>
+      <pointsize>18</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 184, 133, 230);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>       🎸反拍</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>705</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC</family>
+      <pointsize>9</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(158, 158, 158,200);</string>
+    </property>
+    <property name="text">
+     <string>V1.0 By Bilibili：音乐制作王某人</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_PS">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>710</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HarmonyOS Sans SC Light</family>
+      <pointsize>12</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>mdiArea</zorder>
+   <zorder>pushButton_qingkong</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>speed_entry</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_FP</zorder>
+   <zorder>label_ZP</zorder>
+   <zorder>label_4</zorder>
+   <zorder>horizontalScrollBar</zorder>
+   <zorder>label_PS</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="toolTipDuration">
+    <number>1000</number>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_qingkong</tabstop>
+  <tabstop>horizontalScrollBar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
