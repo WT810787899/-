@@ -72,7 +72,7 @@ class MainWindow(QMainWindow):
             
         except ValueError:
             
-            Tishi = "请输入BGM数字！！"
+            Tishi = "请输入BPM数字！！"
             print(Tishi)
             
             self.label_2.setText(Tishi)
