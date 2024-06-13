@@ -5,6 +5,7 @@
 
 Bilibili：音乐制作王某人https://space.bilibili.com/80192671
 
-![PixPin_2024-06-12_23-09-56](https://github.com/WT810787899/Music-base-value-calculator_BPM/assets/172193927/e77cb7bc-a5d5-451a-afdb-069ebf35e38a)
 
-![PixPin_2024-06-12_23-10-13](https://github.com/WT810787899/Music-base-value-calculator_BPM/assets/172193927/b5416d1c-63fb-4f0e-b274-933791b4c5ee)
+
+![PixPin_2024-06-13_17-01-45](https://github.com/WT810787899/Music-base-value-calculator_BPM/assets/172193927/a87f3226-7681-4c2a-82f7-0ca216be3f81)
+![PixPin_2024-06-13_17-01-57](https://github.com/WT810787899/Music-base-value-calculator_BPM/assets/172193927/f92dbe77-6180-4ac4-9651-5097acdee9c0)
