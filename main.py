@@ -126,7 +126,9 @@ class TrayIcon(QSystemTrayIcon):
         self.setContextMenu(menu)
 
 if __name__ == "__main__":
+   
     app = QApplication(sys.argv)
+    #app.setStyle("Fusion")
     mainWindow = MainWindow()
     mainWindow.show()
     sys.exit(app.exec())

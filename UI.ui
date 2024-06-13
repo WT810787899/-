@@ -76,7 +76,9 @@
    <number>5</number>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">alternate-background-color: rgb(226, 226, 226);
+color: rgb(0, 0, 0);
+background-color: rgb(246, 253, 251);</string>
   </property>
   <property name="iconSize">
    <size>
@@ -99,7 +101,9 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">alternate-background-color: rgb(226, 226, 226);</string>
+    <string notr="true">alternate-background-color: rgb(226, 226, 226);
+color: rgb(0, 0, 0);
+background-color: rgb(246, 253, 251);</string>
    </property>
    <widget class="QPushButton" name="pushButton_qingkong">
     <property name="geometry">
@@ -349,11 +353,14 @@ QScrollBar::add-page:horizontal{
     <property name="acceptDrops">
      <bool>false</bool>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(54, 54, 54, 255);</string>
+    </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;请输入一个BPM速度&lt;/span&gt;⬇⬇⬇&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;请输入一个BPM速度&lt;/span&gt;⬇⬇&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::AutoText</enum>
@@ -423,6 +430,7 @@ QScrollBar::add-page:horizontal{
     </property>
     <property name="styleSheet">
      <string notr="true">selection-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
 selection-background-color:rgb(124, 136, 144);
 background-color: qlineargradient(spread:pad, x1:0.483, y1:0, x2:0.489, y2:1, stop:0 rgba(239, 255, 239, 255), stop:1 rgba(255, 255, 255, 255))</string>
     </property>
@@ -465,10 +473,10 @@ background-color: qlineargradient(spread:pad, x1:0.483, y1:0, x2:0.489, y2:1, st
     </property>
     <property name="background">
      <brush brushstyle="SolidPattern">
-      <color alpha="240">
-       <red>50</red>
-       <green>50</green>
-       <blue>50</blue>
+      <color alpha="255">
+       <red>54</red>
+       <green>54</green>
+       <blue>54</blue>
       </color>
      </brush>
     </property>
@@ -596,6 +604,7 @@ selection-background-color: rgb(63, 72, 85);
     </property>
     <property name="styleSheet">
      <string notr="true">selection-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
 selection-background-color:rgb(124, 136, 144);
 background-color: qlineargradient(spread:pad, x1:0.483, y1:0, x2:0.489, y2:1, stop:0 rgba(239, 255, 239, 255), stop:1 rgba(255, 255, 255, 255))</string>
     </property>
